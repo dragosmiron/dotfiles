@@ -129,3 +129,6 @@ vmap <leader>a :Tabularize /
 " ============================
 map <Leader>nn :sp ~/Desktop/Dropbox/notes/programming-notes.txt<cr>
 map <Leader>td :sp ~/Desktop/Dropbox/notes/todo.txt<cr>
+
+
+map ,c :set cursorline! cursorcolumn!<CR>

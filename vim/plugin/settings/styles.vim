@@ -1,4 +1,4 @@
-colorscheme zenburn
+colorscheme jellybeans
 
 if has("gui_running")
   "tell the term has 256 colors
@@ -17,3 +17,6 @@ else
   "dont load csapprox if we no gui support - silences an annoying warning
   let g:CSApprox_loaded = 1
 endif
+
+hi CursorLine   cterm=NONE ctermbg=235
+hi CursorColumn cterm=NONE ctermbg=235
