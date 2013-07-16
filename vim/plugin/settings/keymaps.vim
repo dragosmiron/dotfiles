@@ -132,3 +132,7 @@ map <Leader>td :sp ~/Desktop/Dropbox/notes/todo.txt<cr>
 
 
 map ,c :set cursorline! cursorcolumn!<CR>
+
+" copy and paste with pbcopy/pbpaste in visual mode
+vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
+nmap <C-V> :call setreg("\"",system("pbpaste"))<CR>p
